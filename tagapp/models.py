@@ -42,7 +42,6 @@ class TaggedPost(TaggedItemBase):
 
 class Post(models.Model):
     title = models.CharField(max_length=100, blank=True, null=True)
-    description = models.CharField(max_length = 300, blank = True, null = True)
     tags = TaggableManager(
         verbose_name=('tags'),
         help_text=('A comma-separated list of tags.'),

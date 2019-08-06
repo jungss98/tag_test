@@ -6,6 +6,7 @@ from .models import PostTag
 from .models import Post
 
 admin.site.register(Post)
+admin.site.register(TaggedPost)
 admin.site.register(PostTag)
 
 
